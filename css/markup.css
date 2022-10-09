@@ -1,0 +1,55 @@
+@import url(../fonts/fontstyle.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Frutiger";
+    font-style: normal;
+}
+
+body {
+    background: #FCFCFD;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin: 0 auto;
+    font-size: 3em;
+    font-weight: 700;
+
+}
+
+header {
+    display: flex;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.menubar {
+    display: flex;
+    width: 60.5%;
+    justify-content: space-between;
+}
+
+.logowrapper {
+    display: flex;
+}
+
+.menuwrapper {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* @media screen {} */
