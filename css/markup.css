@@ -28,17 +28,20 @@ header {
     display: flex;
     max-width: 1120px;
     margin: 0 auto;
+    padding: 3em 0;
 }
 
 .container {
     max-width: 1120px;
     margin: 0 auto;
+    display: flex;
 }
 
 .menubar {
     display: flex;
     width: 60.5%;
     justify-content: space-between;
+    padding: 0 55px 0 0;
 }
 
 .logowrapper {
@@ -47,9 +50,85 @@ header {
 
 .menuwrapper {
     display: flex;
+    justify-content: space-between;
+    width: 388px;
     text-decoration: none;
     list-style: none;
 
 }
+
+.menu-item>a,
+.menu-item>a:hover,
+.menu-item>a:active,
+.menu-item>a:visited {
+    text-decoration: none;
+    color: #777E90;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875em;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.socialbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 39.5%;
+    padding: 0 101px 0 56px;
+
+}
+
+.socialbar__learnMore {
+    padding: 0;
+}
+
+.button {
+    display: flex;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1em 1.5em;
+    color: #FCFCFD;
+    background: #32245A;
+    border-radius: 90px;
+    text-decoration: none;
+
+}
+
+.promoWrapper {
+    width: 54%;
+    display: flex;
+    flex-flow: column;
+    height: inherit;
+    justify-content: space-around;
+}
+
+.promoWrapper-heading {
+    font-weight: 700;
+    font-size: 4em;
+
+}
+
+.promoWrapper-description {
+    font-weight: 400;
+    color: #777E91;
+
+}
+
+.promoWrapperPhoto {
+    display: flex;
+    width: 46%;
+}
+
+.hero {
+    transform: rotate(4.09deg);
+}
+
+
+/* .socialbar>a{
+    display: flex;
+    height: 100%;
+} */
 
 /* @media screen {} */
