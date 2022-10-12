@@ -1,15 +1,18 @@
 @import url(../fonts/fontstyle.css);
 
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Frutiger";
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 body {
     background: #FCFCFD;
+
 }
 
 img {
@@ -18,40 +21,81 @@ img {
 }
 
 h2 {
-    margin: 0 auto;
     font-size: 3em;
     font-weight: 700;
 
 }
 
+.h2__center {
+    margin: 0 auto;
+}
+
 header {
     display: flex;
-    max-width: 1120px;
+    justify-content: space-between;
+    width: 70em;
     margin: 0 auto;
     padding: 3em 0;
 }
 
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    width: 70em;
+    margin: 6.25em auto 0 auto;
+    padding: 0 0 5em 0;
+    border-top: 2px solid #E6E8EC;
+
+}
+
 .container {
-    max-width: 1120px;
+    width: 70em;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+}
+
+.container__relative {
+    width: 70em;
+    height: 46.25em;
+    max-height: 46.25em;
+    position: relative;
+    overflow: hidden;
+}
+
+.container__margin {
+    margin: 6.25em auto 0 auto;
+}
+
+.columnWrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: fit-content;
+    height: inherit;
+
+}
+
+.columnWrapper__Upper {
+    justify-content: flex-start;
 }
 
 .menubar {
     display: flex;
-    width: 60.5%;
+    width: 35.9375em;
     justify-content: space-between;
-    padding: 0 55px 0 0;
 }
 
 .logowrapper {
     display: flex;
+    width: 5.625em;
 }
 
 .menuwrapper {
     display: flex;
     justify-content: space-between;
-    width: 388px;
+    width: 24.25em;
     text-decoration: none;
     list-style: none;
 
@@ -71,37 +115,53 @@ header {
     align-items: center;
 }
 
-.socialbar {
+.socialWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 39.5%;
-    padding: 0 101px 0 56px;
+}
 
+.socialWrapper__header {
+    width: 20.6875em;
+}
+
+.socialWrapper__promo {
+    margin: 1.875em 0 0 0;
+    padding: 0 200px 0 0;
+}
+
+.socialbar {
+    width: 12.25em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .socialbar__learnMore {
-    padding: 0;
+    margin: 1.875em 0 0 0;
 }
 
 .button {
+    width: fit-content;
     display: flex;
     font-size: 1em;
     font-weight: 400;
     padding: 1em 1.5em;
     color: #FCFCFD;
     background: #32245A;
-    border-radius: 90px;
+    border-radius: 5.625em;
     text-decoration: none;
 
 }
 
 .promoWrapper {
     width: 54%;
+    height: inherit;
     display: flex;
     flex-flow: column;
-    height: inherit;
-    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    top: 13.3125em;
+    z-index: 100;
 }
 
 .promoWrapper-heading {
@@ -117,18 +177,204 @@ header {
 }
 
 .promoWrapperPhoto {
+    margin: 3.23375em 0 0 0;
     display: flex;
-    width: 46%;
+    width: 55%;
+    height: inherit;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .hero {
     transform: rotate(4.09deg);
 }
 
+.sloganText {
+    margin: 1.25em 0 0 0;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #777E91;
+}
 
-/* .socialbar>a{
+.advantageNumber {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.advantageDash {
+    margin: 1.5em 0;
+    width: 16em;
+    height: 0.125em;
+    background: #E6E8EC;
+}
+
+.advantageHeader {
+    font-weight: 600;
+}
+
+.advantageText {
+    margin: 1em 0 0 0;
+    font-size: 0.875em;
+    color: #777E91;
+}
+
+.tokenomicsHeader {
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.tokenomicsImg {
+    margin: 1.875em 0 0 0;
+    width: 6.25em;
     display: flex;
-    height: 100%;
-} */
+}
 
-/* @media screen {} */
+.tokenomicsLine {
+    margin: 1.875em 0 0 0;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.875em;
+}
+
+.tokenomicsLine-Img {
+    width: 2.5em;
+    margin: 0 0.5em 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em 0 0 0;
+}
+
+.featuresImg {
+    width: 3em;
+}
+
+.featuresHeading {
+    margin: 2em 0 0 0;
+    font-weight: 700;
+    font-size: 1.375em;
+}
+
+.featuresText {
+    margin: 0.75em 0 0 0;
+    font-weight: 400;
+    font-size: 0.875em;
+    color: #777E91;
+}
+
+.roadmap__mob{
+    display: none;
+}
+
+.footerColumnSplitter {
+    background: #E6E8EC;
+    width: 1px;
+    height: 100%;
+}
+
+.footer-menu {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    list-style: none;
+
+
+}
+
+.footer-menuItem {
+    display: flex;
+    margin: 0 0 1.5em 0;
+
+}
+
+.footer-menuItem>a,
+.footer-menuItem>a:hover,
+.footer-menuItem>a:active,
+.footer-menuItem>a:visited {
+    text-decoration: none;
+    color: #777E90;
+    font-weight: 700;
+    font-size: 0.875em;
+    line-height: 100%;
+}
+
+.contacts {
+    font-size: 0.75em;
+    font-weight: 700;
+}
+
+.submitText {
+    font-weight: 400;
+    font-size: 0.875em;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #E6E8EC;
+    border-radius: 5.625em;
+    padding: 0.5em 0.5em 0.5em 1em;
+    margin: 1.5em 0 0 0;
+}
+
+input[type="text"] {
+    border: none;
+}
+
+input[type="submit"] {
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-radius: 50%;
+    background: url(/img/ico/submit.svg) no-repeat center;
+}
+
+.copyright {
+    width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 0.75em;
+    color: #777E91;
+}
+
+.mobMenu{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 9.125em 0 0 0;
+    background: #FCFCFD;
+}
+
+.mobMenu-wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+.mobMenu-menuItem{
+    display: flex;
+    margin: 0 0 1.5em 0;
+
+}
+
+.mobMenu-menuItem>a,
+.mobMenu-menuItem>a:hover,
+.mobMenu-menuItem>a:active,
+.mobMenu-menuItem>a:visited {
+    text-decoration: none;
+    color: #777E90;
+    font-weight: 700;
+    font-size: 0.875em;
+    line-height: 100%;
+}
+
+.mobMenu-button{
+    display: none;
+}
